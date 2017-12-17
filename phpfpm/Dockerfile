@@ -23,6 +23,7 @@ RUN apt-get update \
  && pecl install memcached \
  && echo extension=memcached.so >> /usr/local/etc/php/conf.d/memcached.ini
 
+#最新のnodejsをいれる
 RUN npm cache clean \
  && npm install -g npm \
  && npm cache clean \
